@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+        <style>
+            .calculator-container{
+                background-color: black;
+                width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                border-radius: 20px;
+                padding: 10px;
+                padding-bottom: 50px;
+            }
+            .calculator-screen{
+                font-size: 120px;
+                width: 350px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                padding: 5px;
+                background-color: gray;
+                margin-bottom: 20px;
+                border-radius: 20px;
+            }
+            .button-row{
+                display: flex;
+                justify-content:space-evenly;
+                margin-top:15px;
+            }
+
+            .cal-button{
+                font-size: 40px;
+                height: 60px;
+                width: 75px;
+                border-radius: 0px 8px 0px 8px;
+                border: none;
+                cursor: pointer;
+                border: 1px solid black;
+                font-family: algerian;
+                background-color: gray;
+                color: white;
+            }
+            .cal-button:hover{
+                font-size: 45px;
+                box-shadow: 0 0 1px 0.5px white;
+                transition: 1s;
+                border: 2px solid black;
+            }
+            .bg-tomato{
+                background-color:aqua;
+                color: white;
+            }
+            .text{
+                font-size: 22px;
+            }
+            .ext{
+                background-color: orange;
+                color: aquamarine;
+            }
+            .har{
+                background-color: blue;
+                color: white;
+            }
+            
+            .brand-name{
+                color: beige;
+                text-align: right;
+                margin-right: 20px;
+                font-size: 18px;
+            }
+            body
+            {
+                background-color: blanchedalmond;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="calculator-container">
+            <p class="brand-name">RTC</p>
+        <input type="text" class="calculator-screen"/>
+        <div class="button-row">
+            <button class="cal-button ext">AC</button>
+            <button class="cal-button bg-tomato">()</button>
+            <button class="cal-button bg-tomato">%</button>
+            <button class="cal-button bg-tomato">/</button>
+        </div>
+        <div class="button-row">
+            <button class="cal-button">7</button>
+            <button class="cal-button">8</button>
+            <button class="cal-button">9</button>
+            <button class="cal-button bg-tomato">x</button>
+        </div>
+        <div class="button-row">
+          <button class="cal-button">4</button>
+          <button class="cal-button">5</button>
+          <button class="cal-button">6</button>
+          <button class="cal-button bg-tomato">-</button>
+      </div>
+      <div class="button-row">
+          <button class="cal-button">1</button>
+          <button class="cal-button">2</button>
+          <button class="cal-button">3</button>
+          <button class="cal-button bg-tomato">+</button>
+      </div>
+      <div class="button-row">
+          <button class="cal-button">0</button>
+          <button class="cal-button">.</button>
+          <button class="cal-button text">back</button>
+          <button class="cal-button har">=</button>
+      </div>
+      </div>
+  </body>
+ </html>
+gi
