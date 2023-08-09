@@ -83,37 +83,44 @@
     <body>
         <div class="calculator-container">
             <p class="brand-name">RTC</p>
-        <input type="text" class="calculator-screen"/>
+        <input type="text" id="input" class="calculator-screen"/>
         <div class="button-row">
-            <button class="cal-button ext">AC</button>
-            <button class="cal-button bg-tomato">()</button>
-            <button class="cal-button bg-tomato">%</button>
-            <button class="cal-button bg-tomato">/</button>
+            <button class="cal-button ext" onclick="handlekeypress('AC')">AC</button>
+            <button class="cal-button bg-tomato" onclick="handlekeypress('()')">()</button>
+            <button class="cal-button bg-tomato" onclick="handlekeypress('%')">%</button>
+            <button class="cal-button bg-tomato" onclick="handlekeypress('/')">/</button>
         </div>
         <div class="button-row">
-            <button class="cal-button">7</button>
-            <button class="cal-button">8</button>
-            <button class="cal-button">9</button>
-            <button class="cal-button bg-tomato">x</button>
+            <button class="cal-button" onclick="handlekeypress('7')">7</button>
+            <button class="cal-button " onclick="handlekeypress('8')">8</button>
+            <button class="cal-button" onclick="handlekeypress('9')">9</button>
+            <button class="cal-button bg-tomato"onclick="handlekeypress('*')">x</button>
         </div>
         <div class="button-row">
-          <button class="cal-button">4</button>
-          <button class="cal-button">5</button>
-          <button class="cal-button">6</button>
-          <button class="cal-button bg-tomato">-</button>
+          <button class="cal-button" onclick="handlekeypress('4')">4</button>
+          <button class="cal-button" onclick="handlekeypress('5')">5</button>
+          <button class="cal-button" onclick="handlekeypress('6')">6</button>
+          <button class="cal-button bg-tomato" onclick="handlekeypress('-')">-</button>
       </div>
       <div class="button-row">
-          <button class="cal-button">1</button>
-          <button class="cal-button">2</button>
-          <button class="cal-button">3</button>
-          <button class="cal-button bg-tomato">+</button>
+          <button class="cal-button" onclick="handlekeypress('1')">1</button>
+          <button class="cal-button" onclick="handlekeypress('2')">2</button>
+          <button class="cal-button"onclick="handlekeypress('3')">3</button>
+          <button class="cal-button bg-tomato"onclick="handlekeypress('+')">+</button>
       </div>
       <div class="button-row">
-        <button class="cal-button">0</button>
-        <button class="cal-button">.</button>
-        <button class="cal-button text">back</button>
-        <button class="cal-button har">=</button>
+        <button class="cal-button"onclick="handlekeypress('0')">0</button>
+        <button class="cal-button"onclick="handlekeypress('.')">.</button>
+        <button class="cal-button text"onclick="handlekeypress('back')">back</button>
+        <button class="cal-button har"onclick="handlekeypress('=')">=</button>
     </div>
       </div>
+      <script>
+        function handlekeypress(key)
+        {
+            const inputscreen = document.getElementById('input')
+            inputscreen.value = key;
+        }
+      </script>
   </body>
  </html>
