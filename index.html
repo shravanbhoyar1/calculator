@@ -85,7 +85,7 @@
             <p class="brand-name">RTC</p>
         <input type="text" id="input" class="calculator-screen"/>
         <div class="button-row">
-            <button class="cal-button ext" onclick="handlekeypress('AC')">AC</button>
+            <button class="cal-button ext" onclick="handlekeypress('clear')">AC</button>
             <button class="cal-button bg-tomato" onclick="handlekeypress('()')">()</button>
             <button class="cal-button bg-tomato" onclick="handlekeypress('%')">%</button>
             <button class="cal-button bg-tomato" onclick="handlekeypress('/')">/</button>
@@ -119,13 +119,21 @@
         function handlekeypress(key)
         { 
             const inputscreen = document.getElementById('input')
-          if (key!='=')
-            inputscreen.value += key
+          if (key=='=')
+          {
+            inputscreen . value = eval(inputscreen.value);
+           
+          } 
+          else if(key=='clear')
+          {
+            inputscreen.value =''
+          } 
           else 
-            inputscreen . value = eval(inputscreen.value); 
+          {
+            inputscreen.value += key
         
-        }
-
+          }
+       }
         
       </script>
   </body>
