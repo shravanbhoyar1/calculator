@@ -117,10 +117,16 @@
       </div>
       <script>
         function handlekeypress(key)
-        {
+        { 
             const inputscreen = document.getElementById('input')
-            inputscreen.value = key;
+          if (key!='=')
+            inputscreen.value += key
+          else 
+            inputscreen . value = eval(inputscreen.value); 
+        
         }
+
+        
       </script>
   </body>
  </html>
